@@ -24,13 +24,27 @@
   const SEORYON_PRICE = 39;  // €/mo — Starter floor, "from €39"
   const AHREFS_URL = "https://ahrefs.com/blog/seo-pricing/";
 
-  /* ---------- Per-business-type starting assumptions (editable) ---------- */
+  /* ---------- Per-business-type starting assumptions (editable) ----------
+     These are conservative, rounded STARTING placeholders the user edits —
+     never claims about their business (see the "starting assumptions" note
+     and the result disclaimer). No fabricated per-industry stats: figures are
+     deliberately round and sane, biased low when uncertain. "other" is a safe
+     neutral generic. value = € per customer/order, conv = % visitor→customer. */
   const BIZ_DEFAULTS = {
-    local: { value: 250,  conv: 3 },
-    ecom:  { value: 65,   conv: 2 },
-    saas:  { value: 600,  conv: 1.5 },
-    b2b:   { value: 2000, conv: 2.5 },
-    other: { value: 200,  conv: 2 },
+    local:        { value: 300,  conv: 3 },
+    ecom:         { value: 70,   conv: 2 },
+    saas:         { value: 600,  conv: 2 },
+    b2b:          { value: 2000, conv: 2.5 },
+    agency:       { value: 2500, conv: 2.5 },
+    professional: { value: 1500, conv: 3 },
+    home:         { value: 400,  conv: 3.5 },
+    health:       { value: 500,  conv: 3 },
+    restaurant:   { value: 40,   conv: 3.5 },
+    realestate:   { value: 4000, conv: 1.5 },
+    education:    { value: 300,  conv: 2.5 },
+    fitness:      { value: 150,  conv: 3 },
+    automotive:   { value: 350,  conv: 3 },
+    other:        { value: 250,  conv: 2 },
   };
 
   /* ============================ I18N ============================ */
@@ -46,6 +60,7 @@
       hero_pill: "Runs in your browser · No signup · Free",
       hero_h1: 'What is SEO actually worth to <span class="brand-text">your business?</span>',
       hero_sub: "Enter a few numbers and see the money story: how many visitors you need to hit a revenue goal, what that search traffic is worth, and what an agency would charge to get it — versus SEOryon. Plain estimates, no jargon.",
+      hero_img_alt: "Preview of the SEOryon SEO ROI calculator — visitors needed per month, what that search traffic is worth per month and per year, and the agency-vs-SEOryon cost comparison.",
 
       inp_legend: "Your numbers",
       biz_label: "Business type",
@@ -53,6 +68,15 @@
       biz_ecom: "E-commerce / online store",
       biz_saas: "SaaS / software",
       biz_b2b: "B2B services",
+      biz_agency: "Agency / consulting",
+      biz_professional: "Professional services (legal, finance, accounting)",
+      biz_home: "Home services (plumbing, electrical, HVAC)",
+      biz_health: "Health / medical / dental",
+      biz_restaurant: "Restaurant / hospitality",
+      biz_realestate: "Real estate",
+      biz_education: "Education / courses / coaching",
+      biz_fitness: "Fitness / wellness",
+      biz_automotive: "Automotive",
       biz_other: "Something else",
       biz_help: "Sets sensible starting numbers below. Edit anything to match your business.",
       value_label: "Average customer value (€)",
@@ -167,6 +191,7 @@
       hero_pill: "Läuft im Browser · Ohne Anmeldung · Kostenlos",
       hero_h1: 'Was ist SEO wirklich für <span class="brand-text">dein Unternehmen</span> wert?',
       hero_sub: "Gib ein paar Zahlen ein und sieh die Rechnung in Euro: wie viele Besucher du für ein Umsatzziel brauchst, was dieser Such-Traffic wert ist und was eine Agentur dafür verlangen würde — im Vergleich zu SEOryon. Klare Schätzungen, kein Fachchinesisch.",
+      hero_img_alt: "Vorschau des SEOryon SEO-ROI-Rechners — nötige Besucher pro Monat, was dieser Such-Traffic pro Monat und Jahr wert ist, und der Kostenvergleich Agentur vs. SEOryon.",
 
       inp_legend: "Deine Zahlen",
       biz_label: "Art des Unternehmens",
@@ -174,6 +199,15 @@
       biz_ecom: "E-Commerce / Onlineshop",
       biz_saas: "SaaS / Software",
       biz_b2b: "B2B-Dienstleistungen",
+      biz_agency: "Agentur / Beratung",
+      biz_professional: "Freiberufliche Dienste (Recht, Finanzen, Steuer)",
+      biz_home: "Handwerk / Haustechnik (Sanitär, Elektrik, Heizung)",
+      biz_health: "Gesundheit / Medizin / Zahnmedizin",
+      biz_restaurant: "Gastronomie / Hotellerie",
+      biz_realestate: "Immobilien",
+      biz_education: "Bildung / Kurse / Coaching",
+      biz_fitness: "Fitness / Wellness",
+      biz_automotive: "Automobil / Kfz",
       biz_other: "Etwas anderes",
       biz_help: "Setzt unten sinnvolle Startwerte. Ändere alles, damit es zu deinem Unternehmen passt.",
       value_label: "Durchschnittlicher Kundenwert (€)",
@@ -287,6 +321,7 @@
       hero_pill: "Tourne dans votre navigateur · Sans inscription · Gratuit",
       hero_h1: 'Que vaut vraiment le SEO pour <span class="brand-text">votre entreprise ?</span>',
       hero_sub: "Saisissez quelques chiffres et voyez l’histoire en euros : combien de visiteurs il vous faut pour atteindre un objectif de revenus, ce que vaut ce trafic de recherche, et ce qu’une agence facturerait pour l’obtenir — face à SEOryon. Des estimations claires, sans jargon.",
+      hero_img_alt: "Aperçu du calculateur de ROI SEO de SEOryon — visiteurs nécessaires par mois, valeur de ce trafic de recherche par mois et par an, et comparaison de coûts agence vs SEOryon.",
 
       inp_legend: "Vos chiffres",
       biz_label: "Type d’entreprise",
@@ -294,6 +329,15 @@
       biz_ecom: "E-commerce / boutique en ligne",
       biz_saas: "SaaS / logiciel",
       biz_b2b: "Services B2B",
+      biz_agency: "Agence / conseil",
+      biz_professional: "Professions libérales (droit, finance, comptabilité)",
+      biz_home: "Services à domicile (plomberie, électricité, CVC)",
+      biz_health: "Santé / médical / dentaire",
+      biz_restaurant: "Restauration / hôtellerie",
+      biz_realestate: "Immobilier",
+      biz_education: "Formation / cours / coaching",
+      biz_fitness: "Fitness / bien-être",
+      biz_automotive: "Automobile",
       biz_other: "Autre chose",
       biz_help: "Définit des valeurs de départ raisonnables ci-dessous. Modifiez tout pour coller à votre entreprise.",
       value_label: "Valeur moyenne d’un client (€)",
@@ -427,6 +471,10 @@
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
       const v = dict[el.getAttribute("data-i18n-html")];
       if (v != null) el.innerHTML = v;
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach((el) => {
+      const v = dict[el.getAttribute("data-i18n-alt")];
+      if (v != null) el.setAttribute("alt", v);
     });
 
     if (dict.meta_title) document.title = dict.meta_title;

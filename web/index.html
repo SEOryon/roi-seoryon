@@ -57,12 +57,23 @@
 
   <main>
     <section class="hero">
-      <div class="hero-meta">
-        <span class="status-dot"></span>
-        <span class="status-text" data-i18n="hero_pill">Runs in your browser · No signup · Free</span>
+      <!-- Two-column hero: headline + sub on the left, product preview on the
+           right — mirrors the score.seoryon.com / inspect.seoryon.com layout so
+           the free-tool family stays visually consistent. The calculator cards
+           below stay the interactive visual focus. -->
+      <div class="hero-top">
+        <div class="hero-content">
+          <div class="hero-meta">
+            <span class="status-dot"></span>
+            <span class="status-text" data-i18n="hero_pill">Runs in your browser · No signup · Free</span>
+          </div>
+          <h1 data-i18n-html="hero_h1">What is SEO actually worth to <span class="brand-text">your business?</span></h1>
+          <p class="sub" data-i18n="hero_sub">Enter a few numbers and see the money story: how many visitors you need to hit a revenue goal, what that search traffic is worth, and what an agency would charge to get it — versus SEOryon. Plain estimates, no jargon.</p>
+        </div>
+        <figure class="hero-visual">
+          <img src="/roihero.png" alt="Preview of the SEOryon SEO ROI calculator — visitors needed per month, what that search traffic is worth per month and per year, and the agency-vs-SEOryon cost comparison." data-i18n-alt="hero_img_alt" />
+        </figure>
       </div>
-      <h1 data-i18n-html="hero_h1">What is SEO actually worth to <span class="brand-text">your business?</span></h1>
-      <p class="sub" data-i18n="hero_sub">Enter a few numbers and see the money story: how many visitors you need to hit a revenue goal, what that search traffic is worth, and what an agency would charge to get it — versus SEOryon. Plain estimates, no jargon.</p>
     </section>
 
     <!-- The calculator: inputs on the left, the live result card on the right. -->
@@ -78,6 +89,15 @@
               <option value="ecom" data-i18n="biz_ecom">E-commerce / online store</option>
               <option value="saas" data-i18n="biz_saas">SaaS / software</option>
               <option value="b2b" data-i18n="biz_b2b">B2B services</option>
+              <option value="agency" data-i18n="biz_agency">Agency / consulting</option>
+              <option value="professional" data-i18n="biz_professional">Professional services (legal, finance, accounting)</option>
+              <option value="home" data-i18n="biz_home">Home services (plumbing, electrical, HVAC)</option>
+              <option value="health" data-i18n="biz_health">Health / medical / dental</option>
+              <option value="restaurant" data-i18n="biz_restaurant">Restaurant / hospitality</option>
+              <option value="realestate" data-i18n="biz_realestate">Real estate</option>
+              <option value="education" data-i18n="biz_education">Education / courses / coaching</option>
+              <option value="fitness" data-i18n="biz_fitness">Fitness / wellness</option>
+              <option value="automotive" data-i18n="biz_automotive">Automotive</option>
               <option value="other" data-i18n="biz_other">Something else</option>
             </select>
             <p class="field-help" data-i18n="biz_help">Sets sensible starting numbers below. Edit anything to match your business.</p>
@@ -85,7 +105,7 @@
 
           <div class="field">
             <label for="custValue" data-i18n="value_label">Average customer value (€)</label>
-            <input id="custValue" name="custValue" type="number" inputmode="decimal" min="0" step="any" value="250" />
+            <input id="custValue" name="custValue" type="number" inputmode="decimal" min="0" step="any" value="300" />
             <p class="field-help" data-i18n="value_help">What one customer or order is worth — a one-time sale, or roughly the first-year value for subscriptions.</p>
           </div>
 
