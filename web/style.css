@@ -161,7 +161,7 @@ h1 {
 /* ============================================================
    Calculator — input card + live result card
    ============================================================ */
-.calc { margin-top: 36px; }
+.calc { margin-top: 72px; }
 .calc-grid {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
@@ -611,6 +611,7 @@ footer .microcopy { max-width: 70ch; margin: 10px auto 0; }
   .topbar { padding: 14px 18px; }
   main { padding: 0 18px 72px; }
   .hero { padding: 40px 0 4px; }
+  .calc { margin-top: 48px; }
   .grid3 { grid-template-columns: 1fr; }
   .how h2, .faq h2, .learn h2 { font-size: 28px; }
   .upsell h2 { font-size: 26px; }
