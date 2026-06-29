@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free SEO ROI calculator · What is SEO worth to your business? · SEOryon</title>
+  <meta name="description" content="Free SEO ROI / value calculator — see the visitors you need to hit a revenue goal, what that search traffic is worth, and an honest SEO-agency-vs-SEOryon cost comparison with payback. Runs entirely in your browser. By SEOryon." />
+  <meta name="keywords" content="SEO ROI calculator, SEO value calculator, what is SEO worth, SEO agency cost, SEO retainer cost, organic traffic value, SEO payback, free SEO calculator" />
+  <meta property="og:title" content="Free SEO ROI calculator · What is SEO worth to your business?" />
+  <meta property="og:description" content="Enter a few numbers and see what SEO is actually worth to your business — visitors needed, traffic value, and an honest agency-vs-SEOryon comparison. Free, runs in your browser." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://roi.seoryon.com" />
+  <meta property="og:image" content="https://roi.seoryon.com/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://roi.seoryon.com" />
+  <link rel="alternate" hreflang="en" href="https://roi.seoryon.com/" />
+  <link rel="alternate" hreflang="de" href="https://roi.seoryon.com/?lang=de" />
+  <link rel="alternate" hreflang="fr" href="https://roi.seoryon.com/?lang=fr" />
+  <link rel="alternate" hreflang="x-default" href="https://roi.seoryon.com/" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "SEOryon SEO ROI Calculator",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://roi.seoryon.com",
+      "description": "Free client-side calculator that estimates what SEO is worth to a business — visitors needed for a revenue goal, the value of that traffic, and an agency-vs-SEOryon cost comparison.",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+      "creator": { "@type": "Organization", "name": "SEOryon", "url": "https://seoryon.com" }
+    }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <a href="https://app.seoryon.com/?utm_source=roi-calculator&utm_medium=brand" class="brand" aria-label="SEOryon">
+      <img src="/logo.png" class="logo-img" alt="SEOryon" />
+    </a>
+    <nav class="navlinks">
+      <a href="#how" class="nav-secondary" data-i18n="nav_how">How it works</a>
+      <a href="#faq" class="nav-secondary" data-i18n="nav_faq">FAQ</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+      </div>
+      <a href="https://app.seoryon.com/signup?utm_source=roi-calculator&utm_medium=topbar&utm_campaign=trial" class="cta-link" data-i18n="cta_trial">Start free trial →</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-meta">
+        <span class="status-dot"></span>
+        <span class="status-text" data-i18n="hero_pill">Runs in your browser · No signup · Free</span>
+      </div>
+      <h1 data-i18n-html="hero_h1">What is SEO actually worth to <span class="brand-text">your business?</span></h1>
+      <p class="sub" data-i18n="hero_sub">Enter a few numbers and see the money story: how many visitors you need to hit a revenue goal, what that search traffic is worth, and what an agency would charge to get it — versus SEOryon. Plain estimates, no jargon.</p>
+    </section>
+
+    <!-- The calculator: inputs on the left, the live result card on the right. -->
+    <section class="calc" aria-label="SEO ROI calculator">
+      <div class="calc-grid">
+        <form id="roiForm" class="calc-card input-card" autocomplete="off">
+          <h2 class="card-kicker" data-i18n="inp_legend">Your numbers</h2>
+
+          <div class="field">
+            <label for="bizType" data-i18n="biz_label">Business type</label>
+            <select id="bizType" name="bizType">
+              <option value="local" data-i18n="biz_local">Local service business</option>
+              <option value="ecom" data-i18n="biz_ecom">E-commerce / online store</option>
+              <option value="saas" data-i18n="biz_saas">SaaS / software</option>
+              <option value="b2b" data-i18n="biz_b2b">B2B services</option>
+              <option value="other" data-i18n="biz_other">Something else</option>
+            </select>
+            <p class="field-help" data-i18n="biz_help">Sets sensible starting numbers below. Edit anything to match your business.</p>
+          </div>
+
+          <div class="field">
+            <label for="custValue" data-i18n="value_label">Average customer value (€)</label>
+            <input id="custValue" name="custValue" type="number" inputmode="decimal" min="0" step="any" value="250" />
+            <p class="field-help" data-i18n="value_help">What one customer or order is worth — a one-time sale, or roughly the first-year value for subscriptions.</p>
+          </div>
+
+          <div class="field">
+            <label for="convRate" data-i18n="conv_label">Conversion rate (%)</label>
+            <input id="convRate" name="convRate" type="number" inputmode="decimal" min="0" max="100" step="any" value="3" />
+            <p class="field-help" data-i18n="conv_help">The share of visitors who become customers. A typical starting point is 1–3%. Edit to your own.</p>
+          </div>
+
+          <div class="field">
+            <span class="field-label-static" data-i18n="mode_label">What do you want to work out?</span>
+            <div class="mode-toggle" role="group" aria-label="Calculation mode">
+              <button type="button" class="mode-btn" data-mode="goal" data-i18n="mode_goal" aria-pressed="true">Set a revenue goal</button>
+              <button type="button" class="mode-btn" data-mode="traffic" data-i18n="mode_traffic" aria-pressed="false">Use my current traffic</button>
+            </div>
+          </div>
+
+          <div class="field" id="goalField">
+            <label for="goalRevenue" data-i18n="goal_label">Extra revenue you want from SEO, per month (€)</label>
+            <input id="goalRevenue" name="goalRevenue" type="number" inputmode="decimal" min="0" step="any" value="5000" />
+            <p class="field-help" data-i18n="goal_help">Your target — how much more revenue per month you'd like search to bring in.</p>
+          </div>
+
+          <div class="field hidden" id="trafficField">
+            <label for="curVisitors" data-i18n="traffic_label">Your current monthly visitors from search</label>
+            <input id="curVisitors" name="curVisitors" type="number" inputmode="decimal" min="0" step="any" value="1000" />
+            <p class="field-help" data-i18n="traffic_help">Roughly how many people land on your site from Google or AI search each month today.</p>
+          </div>
+
+          <p class="assumptions-note" data-i18n="assumptions_note">These are starting assumptions, not your real figures — edit them so the estimate fits your business.</p>
+        </form>
+
+        <section class="calc-card result-card" id="result" aria-live="polite">
+          <!-- rendered by app.js -->
+        </section>
+      </div>
+
+      <p class="calc-privacy">
+        <span aria-hidden="true">🔒</span>
+        <span data-i18n="calc_privacy">This calculator runs entirely in your browser. Your numbers are never sent to a server, stored, or shared.</span>
+      </p>
+    </section>
+
+    <section class="how" id="how">
+      <h2 data-i18n="how_h2">How it works</h2>
+      <div class="grid3">
+        <div class="card">
+          <div class="num">1</div>
+          <h3 data-i18n="how1_h3">You enter a few numbers</h3>
+          <p data-i18n="how1_p">Your business type, what a customer is worth, your conversion rate, and either a revenue goal or your current traffic. Sensible defaults are pre-filled.</p>
+        </div>
+        <div class="card">
+          <div class="num">2</div>
+          <h3 data-i18n="how2_h3">We do the math, live</h3>
+          <p data-i18n="how2_p">Simple, transparent arithmetic — visitors needed, what that traffic is worth per month and per year, and the payback. No black box, no data leaves your browser.</p>
+        </div>
+        <div class="card">
+          <div class="num">3</div>
+          <h3 data-i18n="how3_h3">You see the real comparison</h3>
+          <p data-i18n="how3_p">What an SEO agency typically charges to deliver that growth — with a cited industry range — versus what SEOryon costs, and how fast it pays for itself.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparency: exactly how the estimate is built. Honest by design. -->
+    <section class="learn" id="method">
+      <span class="learn-kicker" data-i18n="method_kicker">HOW WE ESTIMATE</span>
+      <h2 data-i18n="method_h2">Honest math, shown in the open.</h2>
+      <p class="learn-lead" data-i18n="method_lead">No magic, no inflated promises. Every number on this page comes from the figures you enter and the two simple formulas below. They're estimates to help you think — your real results depend on your market, competition, and execution.</p>
+      <div class="learn-grid">
+        <div class="learn-card">
+          <h3 data-i18n="method_c1_h">Visitors you need</h3>
+          <p data-i18n="method_c1_p">Customers needed = revenue goal ÷ value per customer. Visitors needed = customers ÷ conversion rate. That's the whole formula — the same one a media buyer would use.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="method_c2_h">What traffic is worth</h3>
+          <p data-i18n="method_c2_p">Visitors × conversion rate × value per customer = revenue. We show it per month and per year so the number feels real, then round it so it never pretends to be precise.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="method_c3_h">The agency range is cited</h3>
+          <p data-i18n="method_c3_p">We don't invent a scary number. The comparison uses a conservative industry range backed by a public survey of 439 companies, linked right in the result.</p>
+        </div>
+        <div class="learn-card">
+          <h3 data-i18n="method_c4_h">Defaults are just starting points</h3>
+          <p data-i18n="method_c4_p">Conversion rate and customer value are pre-filled with typical figures so you get a result fast — but they're yours to change, and the math updates the instant you do.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="upsell">
+      <div class="upsell-card">
+        <div class="upsell-left">
+          <span class="oryon-tag">SEORYON</span>
+          <h2 data-i18n-html="upsell_h2">The number is the gap. <span class="brand-text">SEOryon is how you close it.</span></h2>
+          <p data-i18n="upsell_p">This calculator shows you what the traffic is worth. SEOryon is the engine that earns it — it reads real search and AI-citation signals, decides what to publish, writes the articles that rank, and tracks where you're cited across Google, ChatGPT, Perplexity and Gemini. Agency-scale output, a fraction of agency cost.</p>
+          <a href="https://app.seoryon.com/signup?utm_source=roi-calculator&utm_medium=upsell&utm_campaign=trial" class="bigcta" data-i18n="upsell_cta">Start your 3-day free trial →</a>
+          <p class="microcopy" data-i18n="upsell_fine">3-day free trial · 3 published articles · 1 in-depth LLM/GEO audit · Cancel in two clicks.</p>
+        </div>
+        <div class="upsell-right">
+          <div class="upsell-stat">
+            <div class="upsell-stat-num">€39</div>
+            <div class="upsell-stat-label" data-i18n="stat1_label">Per month to start — vs €1,000+ for an agency</div>
+          </div>
+          <div class="upsell-stat">
+            <div class="upsell-stat-num">5,000+</div>
+            <div class="upsell-stat-label" data-i18n="stat2_label">Ranking articles created for clients</div>
+          </div>
+          <div class="upsell-stat">
+            <div class="upsell-stat-num">2,000+</div>
+            <div class="upsell-stat-label" data-i18n="stat3_label">ChatGPT mentions secured for clients</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2 data-i18n="faq_h2">Questions, answered</h2>
+      <div class="faq-group">
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary data-i18n="faq1_q">How does the calculator work out the numbers?</summary>
+            <p data-i18n="faq1_a">Pure arithmetic from what you type. Customers needed = your revenue goal ÷ value per customer. Visitors needed = customers ÷ your conversion rate. Traffic value = visitors × conversion rate × value per customer. There are no hidden assumptions and no data sent anywhere — it all runs in your browser.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq2_q">Where does the SEO-agency cost range come from?</summary>
+            <p data-i18n="faq2_a">From Ahrefs' public survey of 439 companies on SEO pricing: SEO costs about $2,917 per month on average, with agencies averaging about $3,209 per month. We show a conservative €1,000–€5,000/month range and link the source right in the result. We'd rather use a real, cited figure than invent a scary one.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq3_q">Are these numbers a guarantee?</summary>
+            <p data-i18n="faq3_a">No — they're estimates to help you think about the opportunity. Real results depend on your market, your competition, how good your content is, and how consistently you publish. We round every figure so it never pretends to be more precise than it is.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq4_q">What conversion rate should I use?</summary>
+            <p data-i18n="faq4_a">If you know your real rate, use it. If not, the default by business type (1–3%) is a reasonable starting point — local service sites often convert higher, broad e-commerce lower. It's a starting assumption you edit, not a claim about your site.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq5_q">Is it really free, with no signup?</summary>
+            <p data-i18n="faq5_a">Yes. No account, no email, no card. The calculator is a static page — the only thing it remembers is your language choice, stored locally in your browser. Nothing else is collected or transmitted.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq6_q">How is SEOryon cheaper than an agency?</summary>
+            <p data-i18n="faq6_a">SEOryon runs the whole research-to-publish loop with a single agent instead of a team of people on a retainer — it finds what's worth writing, writes it, checks the facts, and tracks results. You get agency-scale output for a fraction of the cost, and you approve every article. Plans start at €39/month.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <span class="wordmark sm">SEOryon</span> ·
+        <a href="https://app.seoryon.com/?utm_source=roi-calculator&utm_medium=footer">app.seoryon.com</a> ·
+        <a href="https://score.seoryon.com" data-i18n="footer_score">Free AI-search score</a> ·
+        <a href="https://inspect.seoryon.com" data-i18n="footer_inspect">Inspect any page</a>
+      </div>
+      <p class="microcopy" data-i18n="footer_note">A free SEO ROI calculator by SEOryon — your organic growth engine. All figures are estimates that run entirely in your browser; nothing is sent to a server.</p>
+    </footer>
+  </main>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
