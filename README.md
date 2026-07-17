@@ -17,8 +17,9 @@ i18n pattern.
 ## Honesty
 
 - The SEO-agency cost range (**€1,000–€5,000/month**) is cited to
-  [Ahrefs' survey of 439 companies](https://ahrefs.com/blog/seo-pricing/) (SEO averages
-  ~$2,917/mo; agencies ~$3,209/mo). The citation is visible in the result card.
+  [Ahrefs' poll of 439 SEO service providers](https://ahrefs.com/blog/seo-pricing/) (SEO averages
+  ~$2,917/mo; agencies ~$3,209/mo). The citation is visible in the result card. It is a
+  **supply-side** poll — what providers say they charge, not what buyers report paying.
 - All outputs are labelled estimates, rounded sensibly (no fake precision).
 - Conversion-rate / customer-value defaults are clearly-labelled starting assumptions the
   user edits — never presented as the user's real numbers.

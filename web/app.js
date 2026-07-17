@@ -10,7 +10,9 @@
 
    Honesty:
    - Agency cost range is a conservative €1,000–€5,000/mo, cited to
-     Ahrefs' public survey of 439 companies (avg ~$2,917/mo).
+     Ahrefs' public poll of 439 SEO service providers (avg ~$2,917/mo).
+     Note it is a supply-side poll: what providers say they charge, not
+     what buyers report paying.
    - SEOryon anchored at "from €39/mo" (Starter floor) so it can't go stale.
    - Savings computed against the LOW end of the agency range (never overstated).
    - All outputs are rounded and labelled estimates.
@@ -109,7 +111,7 @@
       method_c2_h: "What traffic is worth",
       method_c2_p: "Visitors × conversion rate × value per customer = revenue. We show it per month and per year so the number feels real, then round it so it never pretends to be precise.",
       method_c3_h: "The agency range is cited",
-      method_c3_p: "We don't invent a scary number. The comparison uses a conservative industry range backed by a public survey of 439 companies, linked right in the result.",
+      method_c3_p: "We don't invent a scary number. The comparison uses a conservative industry range backed by a public poll of 439 SEO service providers, linked right in the result.",
       method_c4_h: "Defaults are just starting points",
       method_c4_p: "Conversion rate and customer value are pre-filled with typical figures so you get a result fast — but they're yours to change, and the math updates the instant you do.",
 
@@ -118,14 +120,14 @@
       upsell_cta: "Start your 3-day free trial →",
       upsell_fine: "3-day free trial · 3 published articles · 1 in-depth LLM/GEO audit · Cancel in two clicks.",
       stat1_label: "Per month to start — vs €1,000+ for an agency",
-      stat2_label: "Ranking articles created for clients",
-      stat3_label: "ChatGPT mentions secured for clients",
+      stat2_label: "In-browser math — nothing is sent to a server",
+      stat3_label: "No signup, no account, no card",
 
       faq_h2: "Questions, answered",
       faq1_q: "How does the calculator work out the numbers?",
       faq1_a: "Pure arithmetic from what you type. Customers needed = your revenue goal ÷ value per customer. Visitors needed = customers ÷ your conversion rate. Traffic value = visitors × conversion rate × value per customer. There are no hidden assumptions and no data sent anywhere — it all runs in your browser.",
       faq2_q: "Where does the SEO-agency cost range come from?",
-      faq2_a: "From Ahrefs' public survey of 439 companies on SEO pricing: SEO costs about $2,917 per month on average, with agencies averaging about $3,209 per month. We show a conservative €1,000–€5,000/month range and link the source right in the result. We'd rather use a real, cited figure than invent a scary one.",
+      faq2_a: "From Ahrefs' public poll of 439 SEO service providers on SEO pricing: SEO costs about $2,917 per month on average, with agencies averaging about $3,209 per month. Note that this is what providers say they charge, not what buyers report paying. We show a conservative €1,000–€5,000/month range and link the source right in the result. We'd rather use a real, cited figure than invent a scary one.",
       faq3_q: "Are these numbers a guarantee?",
       faq3_a: "No — they're estimates to help you think about the opportunity. Real results depend on your market, your competition, how good your content is, and how consistently you publish. We round every figure so it never pretends to be more precise than it is.",
       faq4_q: "What conversion rate should I use?",
@@ -171,7 +173,7 @@
       cmp_payback: "At {value} per customer, SEOryon pays for itself after {payback}.",
       pay_one: "a single new customer a month",
       pay_many: "about {k} new customers a month",
-      cmp_citation: "Agency range based on Ahrefs' survey of 439 companies: SEO costs ~$2,917/mo on average, agencies ~$3,209/mo.",
+      cmp_citation: "Agency range based on Ahrefs' poll of 439 SEO service providers: SEO costs ~$2,917/mo on average, agencies ~$3,209/mo.",
       cmp_cite_link: "View the data →",
 
       res_disclaimer: "These are estimates based on the numbers you entered — real results depend on your market, competition, and execution.",
@@ -240,7 +242,7 @@
       method_c2_h: "Was Traffic wert ist",
       method_c2_p: "Besucher × Conversion-Rate × Wert pro Kunde = Umsatz. Wir zeigen ihn pro Monat und pro Jahr, damit die Zahl greifbar wird, und runden sie, damit sie nie eine Scheingenauigkeit vortäuscht.",
       method_c3_h: "Die Agenturspanne ist belegt",
-      method_c3_p: "Wir erfinden keine Angstzahl. Der Vergleich nutzt eine konservative Branchenspanne, gestützt auf eine öffentliche Umfrage unter 439 Unternehmen, direkt im Ergebnis verlinkt.",
+      method_c3_p: "Wir erfinden keine Angstzahl. Der Vergleich nutzt eine konservative Branchenspanne, gestützt auf eine öffentliche Umfrage unter 439 SEO-Dienstleistern, direkt im Ergebnis verlinkt.",
       method_c4_h: "Standardwerte sind nur Startpunkte",
       method_c4_p: "Conversion-Rate und Kundenwert sind mit typischen Zahlen vorausgefüllt, damit du schnell ein Ergebnis bekommst — du kannst sie aber ändern, und die Rechnung aktualisiert sich sofort.",
 
@@ -249,14 +251,14 @@
       upsell_cta: "3 Tage kostenlos testen →",
       upsell_fine: "3 Tage kostenlos testen · 3 veröffentlichte Artikel · 1 ausführliches LLM/GEO-Audit · In zwei Klicks kündbar.",
       stat1_label: "Pro Monat zum Start — statt 1.000 €+ für eine Agentur",
-      stat2_label: "Rankende Artikel für Kunden erstellt",
-      stat3_label: "ChatGPT-Erwähnungen für Kunden gesichert",
+      stat2_label: "Berechnung im Browser — nichts wird an einen Server gesendet",
+      stat3_label: "Keine Anmeldung, kein Konto, keine Karte",
 
       faq_h2: "Antworten auf häufige Fragen",
       faq1_q: "Wie ermittelt der Rechner die Zahlen?",
       faq1_a: "Reine Arithmetik aus deinen Eingaben. Benötigte Kunden = Umsatzziel ÷ Wert pro Kunde. Benötigte Besucher = Kunden ÷ deine Conversion-Rate. Traffic-Wert = Besucher × Conversion-Rate × Wert pro Kunde. Es gibt keine versteckten Annahmen und keine Daten werden irgendwohin gesendet — alles läuft in deinem Browser.",
       faq2_q: "Woher stammt die Kostenspanne für SEO-Agenturen?",
-      faq2_a: "Aus der öffentlichen Umfrage von Ahrefs unter 439 Unternehmen zu SEO-Preisen: SEO kostet im Schnitt rund 2.917 $ pro Monat, Agenturen im Schnitt rund 3.209 $ pro Monat. Wir zeigen eine konservative Spanne von 1.000–5.000 €/Monat und verlinken die Quelle direkt im Ergebnis. Lieber eine echte, belegte Zahl als eine erfundene Angstzahl.",
+      faq2_a: "Aus der öffentlichen Umfrage von Ahrefs unter 439 SEO-Dienstleistern zu SEO-Preisen: SEO kostet im Schnitt rund 2.917 $ pro Monat, Agenturen im Schnitt rund 3.209 $ pro Monat. Das ist, was Dienstleister nach eigenen Angaben verlangen — nicht, was Kunden tatsächlich zahlen. Wir zeigen eine konservative Spanne von 1.000–5.000 €/Monat und verlinken die Quelle direkt im Ergebnis. Lieber eine echte, belegte Zahl als eine erfundene Angstzahl.",
       faq3_q: "Sind diese Zahlen eine Garantie?",
       faq3_a: "Nein — es sind Schätzungen, die dir helfen, über die Chance nachzudenken. Echte Ergebnisse hängen von deinem Markt, deinem Wettbewerb, der Qualität deiner Inhalte und davon ab, wie konsequent du veröffentlichst. Wir runden jede Zahl, damit sie nie genauer wirkt, als sie ist.",
       faq4_q: "Welche Conversion-Rate soll ich nehmen?",
@@ -301,7 +303,7 @@
       cmp_payback: "Bei {value} pro Kunde rechnet sich SEOryon schon nach {payback}.",
       pay_one: "einem einzigen neuen Kunden pro Monat",
       pay_many: "rund {k} neuen Kunden pro Monat",
-      cmp_citation: "Agenturspanne nach der Ahrefs-Umfrage unter 439 Unternehmen: SEO kostet im Schnitt ~2.917 $/Mon., Agenturen ~3.209 $/Mon.",
+      cmp_citation: "Agenturspanne nach der Ahrefs-Umfrage unter 439 SEO-Dienstleistern: SEO kostet im Schnitt ~2.917 $/Mon., Agenturen ~3.209 $/Mon.",
       cmp_cite_link: "Die Daten ansehen →",
 
       res_disclaimer: "Das sind Schätzungen auf Basis deiner Eingaben — echte Ergebnisse hängen von Markt, Wettbewerb und Umsetzung ab.",
@@ -370,7 +372,7 @@
       method_c2_h: "Ce que vaut le trafic",
       method_c2_p: "Visiteurs × taux de conversion × valeur par client = revenus. Nous l’affichons par mois et par an pour que le chiffre soit parlant, puis nous l’arrondissons pour qu’il ne prétende jamais être précis.",
       method_c3_h: "La fourchette agence est sourcée",
-      method_c3_p: "Nous n’inventons pas un chiffre effrayant. La comparaison utilise une fourchette sectorielle prudente, appuyée sur une enquête publique auprès de 439 entreprises, liée directement dans le résultat.",
+      method_c3_p: "Nous n’inventons pas un chiffre effrayant. La comparaison utilise une fourchette sectorielle prudente, appuyée sur une enquête publique auprès de 439 prestataires SEO, liée directement dans le résultat.",
       method_c4_h: "Les valeurs par défaut ne sont que des points de départ",
       method_c4_p: "Le taux de conversion et la valeur client sont pré-remplis avec des chiffres typiques pour un résultat rapide — mais ils sont à vous de changer, et le calcul se met à jour dès que vous le faites.",
 
@@ -379,14 +381,14 @@
       upsell_cta: "Démarrer l’essai gratuit de 3 jours →",
       upsell_fine: "Essai gratuit de 3 jours · 3 articles publiés · 1 audit LLM/GEO approfondi · Annulation en deux clics.",
       stat1_label: "Par mois pour démarrer — contre 1 000 €+ pour une agence",
-      stat2_label: "Articles bien classés produits pour des clients",
-      stat3_label: "Mentions ChatGPT obtenues pour des clients",
+      stat2_label: "Calcul dans le navigateur — rien n’est envoyé à un serveur",
+      stat3_label: "Sans inscription, sans compte, sans carte",
 
       faq_h2: "Vos questions, nos réponses",
       faq1_q: "Comment le calculateur trouve-t-il les chiffres ?",
       faq1_a: "De l’arithmétique pure, à partir de ce que vous saisissez. Clients nécessaires = objectif de revenus ÷ valeur par client. Visiteurs nécessaires = clients ÷ votre taux de conversion. Valeur du trafic = visiteurs × taux de conversion × valeur par client. Aucune hypothèse cachée et aucune donnée envoyée où que ce soit — tout tourne dans votre navigateur.",
       faq2_q: "D’où vient la fourchette de coût d’une agence SEO ?",
-      faq2_a: "De l’enquête publique d’Ahrefs auprès de 439 entreprises sur les prix du SEO : le SEO coûte environ 2 917 $ par mois en moyenne, les agences environ 3 209 $ par mois. Nous affichons une fourchette prudente de 1 000–5 000 €/mois et lions la source directement dans le résultat. Nous préférons un chiffre réel et sourcé à un chiffre effrayant inventé.",
+      faq2_a: "De l’enquête publique d’Ahrefs auprès de 439 prestataires SEO sur les prix du SEO : le SEO coûte environ 2 917 $ par mois en moyenne, les agences environ 3 209 $ par mois. Il s’agit des tarifs que les prestataires déclarent pratiquer, et non de ce que les clients déclarent payer. Nous affichons une fourchette prudente de 1 000–5 000 €/mois et lions la source directement dans le résultat. Nous préférons un chiffre réel et sourcé à un chiffre effrayant inventé.",
       faq3_q: "Ces chiffres sont-ils une garantie ?",
       faq3_a: "Non — ce sont des estimations pour réfléchir à l’opportunité. Les résultats réels dépendent de votre marché, de votre concurrence, de la qualité de vos contenus et de votre régularité de publication. Nous arrondissons chaque chiffre pour qu’il ne paraisse jamais plus précis qu’il ne l’est.",
       faq4_q: "Quel taux de conversion utiliser ?",
@@ -431,7 +433,7 @@
       cmp_payback: "À {value} par client, SEOryon se rentabilise dès {payback}.",
       pay_one: "un seul nouveau client par mois",
       pay_many: "environ {k} nouveaux clients par mois",
-      cmp_citation: "Fourchette agence d’après l’enquête d’Ahrefs auprès de 439 entreprises : le SEO coûte ~2 917 $/mois en moyenne, les agences ~3 209 $/mois.",
+      cmp_citation: "Fourchette agence d’après l’enquête d’Ahrefs auprès de 439 prestataires SEO : le SEO coûte ~2 917 $/mois en moyenne, les agences ~3 209 $/mois.",
       cmp_cite_link: "Voir les données →",
 
       res_disclaimer: "Ce sont des estimations basées sur les chiffres que vous avez saisis — les résultats réels dépendent de votre marché, de la concurrence et de l’exécution.",
