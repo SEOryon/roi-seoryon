@@ -13,7 +13,7 @@
      Ahrefs' public poll of 439 SEO service providers (avg ~$2,917/mo).
      Note it is a supply-side poll: what providers say they charge, not
      what buyers report paying.
-   - SEOryon anchored at "from €39/mo" (Starter floor) so it can't go stale.
+   - SEOryon anchored at "from €49/mo" (Starter floor) so it can't go stale.
    - Savings computed against the LOW end of the agency range (never overstated).
    - All outputs are rounded and labelled estimates.
    ============================================================ */
@@ -23,7 +23,7 @@
   /* ---------- Fixed, cited figures (see honesty note above) ---------- */
   const AGENCY_LOW = 1000;   // €/mo — conservative low end
   const AGENCY_HIGH = 5000;  // €/mo
-  const SEORYON_PRICE = 39;  // €/mo — Starter floor, "from €39"
+  const SEORYON_PRICE = 49;  // €/mo — Starter floor, "from €49"
   const AHREFS_URL = "https://ahrefs.com/blog/seo-pricing/";
 
   /* ---------- Per-business-type starting assumptions (editable) ----------
@@ -135,7 +135,7 @@
       faq5_q: "Is it really free, with no signup?",
       faq5_a: "Yes. No account, no email, no card. The calculator is a static page — the only thing it remembers is your language choice, stored locally in your browser. Nothing else is collected or transmitted.",
       faq6_q: "How is SEOryon cheaper than an agency?",
-      faq6_a: "SEOryon runs the whole research-to-publish loop with a single agent instead of a team of people on a retainer — it finds what's worth writing, writes it, checks the facts, and tracks results. You get agency-scale output for a fraction of the cost, and you approve every article. Plans start at €39/month.",
+      faq6_a: "SEOryon runs the whole research-to-publish loop with a single agent instead of a team of people on a retainer — it finds what's worth writing, writes it, checks the facts, and tracks results. You get agency-scale output for a fraction of the cost, and you approve every article. Plans start at €49/month.",
 
       footer_score: "Free AI-search score",
       footer_inspect: "Inspect any page",
@@ -266,7 +266,7 @@
       faq5_q: "Ist es wirklich kostenlos, ohne Anmeldung?",
       faq5_a: "Ja. Kein Konto, keine E-Mail, keine Karte. Der Rechner ist eine statische Seite — das Einzige, was er sich merkt, ist deine Sprachwahl, lokal in deinem Browser gespeichert. Sonst wird nichts erfasst oder übertragen.",
       faq6_q: "Wieso ist SEOryon günstiger als eine Agentur?",
-      faq6_a: "SEOryon führt den gesamten Kreislauf von der Recherche bis zur Veröffentlichung mit einem einzigen Agenten aus, statt mit einem Team auf Honorarbasis — er findet, was sich zu schreiben lohnt, schreibt es, prüft die Fakten und verfolgt die Ergebnisse. Du bekommst Output auf Agenturniveau zu einem Bruchteil der Kosten und gibst jeden Artikel frei. Pläne starten bei 39 €/Monat.",
+      faq6_a: "SEOryon führt den gesamten Kreislauf von der Recherche bis zur Veröffentlichung mit einem einzigen Agenten aus, statt mit einem Team auf Honorarbasis — er findet, was sich zu schreiben lohnt, schreibt es, prüft die Fakten und verfolgt die Ergebnisse. Du bekommst Output auf Agenturniveau zu einem Bruchteil der Kosten und gibst jeden Artikel frei. Pläne starten bei 49 €/Monat.",
 
       footer_score: "Kostenloser KI-Such-Score",
       footer_inspect: "Jede Seite prüfen",
@@ -396,7 +396,7 @@
       faq5_q: "Est-ce vraiment gratuit, sans inscription ?",
       faq5_a: "Oui. Pas de compte, pas d’e-mail, pas de carte. Le calculateur est une page statique — la seule chose qu’il retient est votre choix de langue, stocké localement dans votre navigateur. Rien d’autre n’est collecté ni transmis.",
       faq6_q: "Pourquoi SEOryon est-il moins cher qu’une agence ?",
-      faq6_a: "SEOryon fait tourner toute la boucle, de la recherche à la publication, avec un seul agent au lieu d’une équipe au forfait — il trouve ce qui mérite d’être écrit, le rédige, vérifie les faits et suit les résultats. Vous obtenez une production à l’échelle d’une agence pour une fraction du coût, et vous validez chaque article. Les forfaits démarrent à 39 €/mois.",
+      faq6_a: "SEOryon fait tourner toute la boucle, de la recherche à la publication, avec un seul agent au lieu d’une équipe au forfait — il trouve ce qui mérite d’être écrit, le rédige, vérifie les faits et suit les résultats. Vous obtenez une production à l’échelle d’une agence pour une fraction du coût, et vous validez chaque article. Les forfaits démarrent à 49 €/mois.",
 
       footer_score: "Score recherche IA gratuit",
       footer_inspect: "Analyser une page",
